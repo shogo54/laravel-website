@@ -22,3 +22,4 @@ Route::get('/oop/class', 'OOPController@classAndInstance');
 
 
 Route::get('/data-structure/array', 'DataStructureController@aboutArray');
+Route::get('/data-structure/list', 'DataStructureController@aboutList');

@@ -51,7 +51,7 @@
     <h2>What is an Array?</h2>
     <p>An array is a data structure that can store an ordered collection of the same type of elements with indexes.</p>
     <p>Take a look of the image below.</p>
-    <img src="{{ URL::to('/img/array_drawing.png') }}">
+    <img src='{{URL::to('img/array_structure.png')}}'>
     <p>
         An array looks like a sequence of boxes. Each box is called an element.
         Elements are pretty much the same as variables--they have a type and can store data.
@@ -86,6 +86,7 @@
     <p class='code'>
         int scores[];
     </p>
+    <img src='{{URL::to('img/array_declare.png')}}'>
     <p>
         We can use "double[] scores" or "double scores[]" to store double types,
         and use "String[] names" or "String names[]" to store String types.
@@ -99,13 +100,14 @@
     <p class='code'>
         scores = new int[5];
     </p>
+    <img src='{{URL::to('img/array_initialize.png')}}'>
     <p>
         In the example above, we cannot assign "new double[5]" or "new String[5]" because we declared
         scores as an array to store int types already.
     </p>
     <p>
         An array can be declared and initialized in a single line of code, like a variable can be.
-        To do so, we need to write:
+        To do so, we can write:
     </p>
     <p class='code'>
         int[] scores = new int[5];
@@ -116,6 +118,27 @@
     </p>
 
     <h2>How to Use an Array</h2>
+    <p>To know how many elements an array can store, you can use "arrayName.length".</p>
+    <p class='code'>
+        int[] scores = new int[5];<br>
+        int len = scores.length;<br>
+        System.out.println("number of elements: " + len);&emsp;//print 5
+    </p>
+    <p>
+        We can use each element in an array like a variable, but we need to
+        specify the index of the element, like "arrayName[index] = value".
+        Also be careful when you use index. The first index always starts from 0, and the last index is always "length - 1".
+    </p>
+    <p class='code'>
+        int[] scores = new int[5];<br>
+        scores[0] = 85;&emsp;//assigning 85 to the first index<br>
+        scores[4] = 76;&emsp;//assigning 76 to the last index<br>
+        System.out.println("value of the first element: " + scores[0]);&emsp;//print 85<br>
+        System.out.println("value of the last element: " + scores[4]);&emsp;//print 76
+    </p>
+    <p>
+
+    </p>
 
     <h2>Summary</h2>
     <ul>

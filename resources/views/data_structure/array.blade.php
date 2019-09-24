@@ -51,7 +51,7 @@
     <h2>What is an Array?</h2>
     <p>An array is a data structure that can store an ordered collection of the same type of elements with indexes.</p>
     <p>Take a look of the image below.</p>
-    <img src='{{URL::to('img/array_structure.png')}}'>
+    <img src='{{URL::to('/img/array_structure.png')}}'>
     <p>
         An array looks like a sequence of boxes. Each box is called an element.
         Elements are pretty much the same as variables--they have a type and can store data.
@@ -86,7 +86,7 @@
     <p class='code'>
         int scores[];
     </p>
-    <img src='{{URL::to('img/array_declare.png')}}'>
+    <img src='{{URL::to('/img/array_declare.png')}}'>
     <p>
         We can use "double[] scores" or "double scores[]" to store double types,
         and use "String[] names" or "String names[]" to store String types.
@@ -100,7 +100,7 @@
     <p class='code'>
         scores = new int[5];
     </p>
-    <img src='{{URL::to('img/array_initialize.png')}}'>
+    <img src='{{URL::to('/img/array_initialize.png')}}'>
     <p>
         In the example above, we cannot assign "new double[5]" or "new String[5]" because we declared
         scores as an array to store int types already.

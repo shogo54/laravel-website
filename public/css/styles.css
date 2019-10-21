@@ -2,7 +2,7 @@
 
 html, body {
     background-color: #eff0f2;
-    color: #636b6f;
+    color: #222222;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     height: 100vh;
@@ -30,7 +30,7 @@ html, body {
 }
 
 .content {
-    width: 760px;
+    width: 900px;
     background-color: white;
     margin: 25px;
     padding: 20px 30px;
@@ -43,7 +43,10 @@ html, body {
 .container{
     justify-content: center;
     display: flex;
-    background-image: url('http://bangflash.sakura.ne.jp/kaikei/wp-content/themes/simplicity2-child/images/body-back.png');
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .menu{
@@ -71,14 +74,27 @@ h2{
 }
 
 p{
-    font-size: 23px;
+
+    font-size: 22px;
     color: black;
 }
 
 p.code{
     padding: 20px;
     background-color: black;
-    color: #16C60C;
+    //color: #16C60C;
+    color: #FFFF00;
+    font-family: 'Courier New';
+}
+
+dfn{
+
+}
+
+i{
+    font-family: 'Courier New';
+    background-color: #FBD5FB;
+    font-style: normal;
 }
 
 .m-b-md {

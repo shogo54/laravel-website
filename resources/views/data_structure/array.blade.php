@@ -8,6 +8,8 @@
 
     </div>
 
+
+
     <h2>Inconvenience of Variables</h2>
     <p>
         As a programmer, we often face to a situation where we need to deal with lots of data at once.
@@ -40,13 +42,15 @@
         With an array, we can rewrite the previous code as the following.
     </p>
     <p class='code'>
-        int[] scores = new int[6]{77,89,92,64,55,23};<br>
+        int[] scores = new int[]{77,89,92,64,55,23};<br>
         int sum = 0;<br>
         for(int i=0; i&lt;scores.length; i++){<br>
         &emsp;&emsp;sum += scores[i];<br>
         }<br>
         int avg = sum / scores.length;
     </p>
+
+
 
     <h2>What is an Array?</h2>
     <p>An array is a data structure that can store an ordered collection of the same type of elements with indexes.</p>
@@ -67,6 +71,8 @@
         This means that, with an array, we can do things like "sum up all the elements in the array" or
         "find this value in the array" much easier than using variables.
     </p>
+
+
 
     <h2>How to Create an Array</h2>
     <p>To create an array, there are 2 steps that we need to follow.</p>
@@ -136,15 +142,139 @@
         System.out.println("value of the first element: " + scores[0]);&emsp;//print 85<br>
         System.out.println("value of the last element: " + scores[4]);&emsp;//print 76
     </p>
-    <p>
 
+
+
+    <h2>More about Initialization of Array</h2>
+    <p>
+        Unlike variables which need to be initialized before used, elements in an array will be
+        automatically initialized.
     </p>
+    <p class='code'>
+        int x;<br>
+        System.out.println(x);&emsp;//compile error due to uninitialized variable x
+    </p>
+    <p class='code'>
+        boolean[] attendance = new int[30];<br>
+        System.out.println(attendance[5]);&emsp;//print false, without an error
+    </p>
+    <p>
+        the default value of elements in an array is determined by its type.<br>
+        Here is the list of some examples.
+    </p>
+    <table>
+        <tr>
+            <th>int</th><th>0</th>
+        </tr>
+        <tr>
+            <th>double</th><th>0.0</th>
+        </tr>
+        <tr>
+            <th>boolean</th><th>false</th>
+        </tr>
+        <tr>
+            <th>String</th><th>null</th>
+        </tr>
+        <tr>
+            <th>any reference</th><th>null</th>
+        </tr>
+    </table>
+
+    <p>There are ways to declare and initialize an array, and initialize elements in an array at the same time.</p>
+    <p>
+        We can do this by<br>
+        "elementType[] arrayName = new elementType[] {element1, element2, element3, ...}" or<br>
+        "elementType[] arrayName = {element1, element2, element3, ...}"<br>
+        Examples are shown bellow.
+    </p>
+    <p class='code'>
+        int[] scores = new int[] {30, 40, 50, 60, 70};
+        String[] names = new String[] {John, Alex, Max, Nancy, Mary};
+    </p>
+
+
+
+    <h2>Array and For Loop</h2>
+    <p>
+        By using with for loop, an array becomes such a powerful tool to deal with massive amount of data.
+        As shown in "Inconvenience of variables", using an array with for loop can keep our code much simpler
+        and easier to maintain. The bellow is an example of how we can print all of the elements in an array with
+        for loop.
+    </p>
+    <p class='code'>
+        int[] scores = {77,89,92,64,55,23};<br>
+        for(int i=0; i&lt;scores.length; i++){<br>
+        &emsp;&emsp;System.out.println(scores[i]);<br>
+        }
+    </p>
+    <p>
+        There are two kep points in this code. The first one is that we use "scores.length" for the ending condition.
+        By doing so, we do not need to change the code based on how many elements an array contains. The for loop
+        always moves i from 0 to scores.length-1.
+        The second point is that we use "scores[i]" for printing. As i moves from 0 to scores.length-1,
+        this for loop will print every element in an array.
+    </p>
+    <p>There is another way to deal with every element in an array. This is called for each loop.</p>
+    <p class='code'>
+        int[] scores = {77,89,92,64,55,23};<br>
+        for(int elem: scores){<br>
+        &emsp;&emsp;System.out.println(elem);<br>
+        }
+    </p>
+    <p>
+        In this way, each element in an array will be stored in the variable "elem" and we use the variable
+        to print out the element.
+    </p>
+
+
+    <!--
+    <h2>Array and Exception</h2>
+    -->
 
     <h2>Summary</h2>
     <ul>
         <li><p>Array is a sequence of elements with indexes.</p></li>
         <li><p>In Java, an array can store only a single type of data.</p></li>
         <li><p>The index in an array always starts from 0.</p></li>
+        <li>
+            <p>The ways to declare an array are:</p>
+            <p> - elementType[] arrayName;</p>
+            <p> - elementType arrayName[];</p>
+        </li>
+        <li>
+            <p>we can initialize an array by:</p>
+            <p> - arrayName = new elementType[numberOfElement];</p>
+        </li>
+        <li>
+            <p>There are ways to declare and initialize an array in a single line:</p>
+            <p> - elementType[] arrayName = new elementType[numberOfElement];</p>
+            <p> - elementType arrayName[] = new elementType[numberOfElement];</p>
+        </li>
+        <li>
+            <p>Also we can initialize elements in an array on the same line as well:</p>
+            <p> - arrayName = new elementType[] {element1, element2, element3, ...};</p>
+            <p> - arrayName = {element1, element2, element3, ...};</p>
+        </li>
+        <li>
+            <p>we can get access to the length of an array by: </p>
+            <p> - arrayName.length</p>
+        </li>
+        <li>
+            <p>Array and for loop:</p>
+            <p>
+                for(int i=0; i&lt;arrayName.length; i++){<br>
+                &emsp;&emsp;// do something with arrayName[i]<br>
+                }
+            </p>
+        </li>
+        <li>
+            <p>Array and for each loop:</p>
+            <p>
+                for(elementType elementName: arrayName){<br>
+                &emsp;&emsp;// do something with elementName<br>
+                }
+            </p>
+        </li>
     </ul>
 
     <h2>Coding Problems with Array</h2>

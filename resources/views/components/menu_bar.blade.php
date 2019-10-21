@@ -14,6 +14,7 @@
                 </ul>
             </div>
         </li>
+        <!--
         <li>
             <div>
                 <h3>Object Oriented Programming</h3>
@@ -21,6 +22,15 @@
                     <li><a href='/about'>Class & Instance</a></li>
                     <li><a href='/how-to-use'>3 components</a></li>
                     <li><a href='/contact'>Inheritance</a></li>
+                </ul>
+            </div>
+        </li>
+        -->
+        <li>
+            <div>
+                <h3>Basics</h3>
+                <ul>
+                    <li><a href='/basics/primitive-and-reference'>Primitive & Reference</a></li>
                 </ul>
             </div>
         </li>
@@ -34,7 +44,14 @@
                     <li><a href='/data-structure/list'>Overview of List</a></li>
                 </ul>
             </div>
-
+        </li>
+        <li>
+            <div>
+                <h3>Algorithms</h3>
+                <ul>
+                    <li><a href='/'>Welcome</a></li>
+                </ul>
+            </div>
         </li>
     </ul>
 </div>

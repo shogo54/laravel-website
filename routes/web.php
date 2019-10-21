@@ -17,6 +17,8 @@ Route::get('/about', 'HomeController@about');
 Route::get('/how-to-use', 'HomeController@howToUse');
 Route::get('/contact', 'HomeController@contact');
 
+Route::get('/basics/primitive-and-reference', 'BasicsController@primitiveAndReference');
+
 Route::get('/oop', 'OOPController@index');
 Route::get('/oop/class', 'OOPController@classAndInstance');
 

@@ -18,11 +18,11 @@
 <body>
 
 <div class='container'>
+    <div class='header'>
+        @include('components.menu_bar')
+    </div>
     <div class='content'>
         @yield('content')
-    </div>
-    <div class='menu'>
-        @include('components.menu_bar')
     </div>
 </div>
 
@@ -30,5 +30,7 @@
     @yield('footer')
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>

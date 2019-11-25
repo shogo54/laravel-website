@@ -13,24 +13,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset("css/styles.css")}}">
 </head>
 <body>
 
-<div class='container'>
-    <div class='header'>
-        @include('components.menu_bar')
-    </div>
-    <div class='content'>
-        @yield('content')
-    </div>
-</div>
+@yield("main")
 
-<div class='footer'>
-    @yield('footer')
+<div class="footer">
+    @yield("footer")
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset("js/script.js")}}"></script>
 </body>
 </html>

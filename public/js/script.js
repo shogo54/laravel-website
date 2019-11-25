@@ -30,3 +30,21 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
+
+/* navigation bar sticking to the top as scroll */
+$(function() {
+    //load or scroll
+    $(window).on('load scroll', function(){
+
+        console.log($(window).scrollTop());
+        if ($(document).scrollTop() > 70) {
+            console.log('yes');
+            $('.nav').addClass('fixed');
+        } else {
+            console.log('no');
+            $('.nav').removeClass('fixed');
+        }
+
+    });
+
+});

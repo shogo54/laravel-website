@@ -9,22 +9,22 @@ class HomeController extends Controller
 
     public function welcome()
     {
-        return view('home/welcome');
+        return view("home/welcome");
     }
 
     public function about()
     {
-        return view('home/about');
+        return view("home/about");
     }
 
-    public function howToUse()
+    public function aboutPractice()
     {
-        return view('home/how_to_use');
+        return view("home/about_practice");
     }
 
     public function contact()
     {
-        return view('home/contact');
+        return view("home/contact");
     }
 
 }

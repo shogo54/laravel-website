@@ -11,10 +11,9 @@
 |
 */
 
+/* learn pages */
 Route::get('/', 'HomeController@welcome');
-
 Route::get('/about', 'HomeController@about');
-Route::get('/how-to-use', 'HomeController@howToUse');
 Route::get('/contact', 'HomeController@contact');
 
 Route::get('/basics/primitive-and-reference', 'BasicsController@primitiveAndReference');
@@ -25,3 +24,7 @@ Route::get('/oop/class', 'OOPController@classAndInstance');
 
 Route::get('/data-structure/array', 'DataStructureController@aboutArray');
 Route::get('/data-structure/list', 'DataStructureController@aboutList');
+
+
+/* practice pages */
+Route::get("/practice/about", "HomeController@aboutPractice");

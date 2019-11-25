@@ -1,34 +1,45 @@
-@extends('layouts.app')
+@extends("layouts.learn")
 
-@section('content')
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
+@section("content")
+    <div class="flex-center">
+        @if (Route::has("login"))
             <div class="top-right links">
                 @auth
-                    <a href="{{ url('/home') }}">Home</a>
+                    <a href="{{ url("/home") }}">Home</a>
                 @else
-                    <a href="{{ route('login') }}">Login</a>
+                    <a href="{{ route("login") }}">Login</a>
 
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
+                    @if (Route::has("register"))
+                        <a href="{{ route("register") }}">Register</a>
                     @endif
                 @endauth
             </div>
         @endif
 
-        <div class="content">
+        <div class="welcome">
+            <div class="welcome-to m-b-md">
+                Welcome to
+            </div>
             <div class="title m-b-md">
-                Welcome to %%%
+                Java Data Structure and Algorithm
             </div>
 
-            <div class="links">
-                <a href="https://laravel.com/docs">Docs</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://blog.laravel.com">Blog</a>
-                <a href="https://nova.laravel.com">Nova</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
+            <div class="news">
+                <h3>New Contents in Learning Pages</h3>
+                <div class="box">
+                    <ul>
+                        <li><a href="/data-structure/list"><p>Overview of List</p></a></li>
+                        <li><a href="/data-structure/array"><p>Array</p></a></li>
+                    </ul>
+                </div>
+
+                <h3>New Contents in Coding Pages</h3>
+                <div class="box blue">
+                    <ul>
+                        <li><a><p>Overview of List</p></a></li>
+                        <li><a><p>Practice Page</p></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

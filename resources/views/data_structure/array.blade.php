@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends("layouts.learn")
 
-@section('content')
+@section("content")
     <h1>Array</h1>
 
     <div id="content-table">

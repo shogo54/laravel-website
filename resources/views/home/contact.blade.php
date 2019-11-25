@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.learn')
 
 @section('content')
 <h1>contact</h1>

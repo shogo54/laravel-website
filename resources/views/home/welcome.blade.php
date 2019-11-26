@@ -1,4 +1,4 @@
-@extends("layouts.learn")
+@extends("layouts.learning")
 
 @section("content")
     <div class="flex-center">
@@ -36,8 +36,8 @@
                 <h3>New Contents in Coding Pages</h3>
                 <div class="box blue">
                     <ul>
-                        <li><a><p>Overview of List</p></a></li>
-                        <li><a><p>Practice Page</p></a></li>
+                        <li><a href="/coding/data-structure/array"><p>Coding Practice Using an Array</p></a></li>
+                        <li><a href="/coding/algorithm/bfs"><p>Coding Practice Using BFS</p></a></li>
                     </ul>
                 </div>
             </div>

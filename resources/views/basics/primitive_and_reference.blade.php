@@ -1,4 +1,4 @@
-@extends('layouts.practice')
+@extends('layouts.coding')
 
 @section('content')
 

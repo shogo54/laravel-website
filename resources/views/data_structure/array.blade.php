@@ -1,7 +1,7 @@
-@extends("layouts.learn")
+@extends("layouts.learning")
 
 @section("content")
-    <h1>Array</h1>
+    <h1>Coding Practice Using an Array</h1>
 
     <div id="content-table">
         <h3>Table of Contents</h3>

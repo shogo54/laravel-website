@@ -1,4 +1,4 @@
-@extends("layouts.learn")
+@extends("layouts.learning")
 
 @section("content")
     <h1>Overview of List</h1>
@@ -10,10 +10,6 @@
             <li><a href="#content2">What is a List?</a></li>
             <li><a href="#content3">How to Create a List</a></li>
             <li><a href="#content4">How to Use a List</a></li>
-            <li><a href="#content5">More about Initialization of Array</a></li>
-            <li><a href="#content6">Array and For Loop</a></li>
-            <li><a href="#content7">Summary</a></li>
-            <li><a href="#content8">Coding Problems with Array</a></li>
         </ul>
     </div>
 

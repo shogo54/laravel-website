@@ -5,15 +5,15 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a class="init-bottom">Basics</a>
-                <ul>
-                    <li><a href='/practice/basics/'>Primitive & Reference</a></li>
-                </ul>
+                <a href="/about">Switch to Learning</a>
+            </li>
+            <li>
+                <a href="/coding/basics">Basics</a>
             </li>
             <li>
                 <a class="init-bottom">Data Structures</a>
                 <ul>
-                    <li><a href="/data-structure/array">Array</a></li>
+                    <li><a href="/coding/data-structure/array">Array</a></li>
                     <li><a href="/data-structure/list">Linked List</a></li>
                     <li><a href="/data-structure/list">Binary Tree & BST</a></li>
                 </ul>
@@ -21,16 +21,14 @@
             <li>
                 <a class="init-bottom">Algorithms</a>
                 <ul>
-                    <li><a href="/about">BFS & DFS</a></li>
+                    <li><a href="/coding/algorithm/bfs">BFS</a></li>
+                    <li><a href="/coding/algorithm/dfs">DFS</a></li>
                     <li><a href="/how-to-use">Dynamic Programming</a></li>
                     <li><a href="/contact">Divide and Conquer</a></li>
                 </ul>
             </li>
             <li>
-                <a href="/practice/about">About</a>
-            </li>
-            <li>
-                <a href="/about">Switch to Learning</a>
+                <a href="/coding/about">About</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>

@@ -17,14 +17,19 @@ class HomeController extends Controller
         return view("home/about");
     }
 
-    public function aboutPractice()
+    public function aboutCoding()
     {
-        return view("home/about_practice");
+        return view("/coding/home/about");
     }
 
     public function contact()
     {
         return view("home/contact");
+    }
+
+    public function basics()
+    {
+        return view("/coding/home/basics");
     }
 
 }

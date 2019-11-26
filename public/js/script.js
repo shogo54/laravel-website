@@ -35,16 +35,10 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 $(function() {
     //load or scroll
     $(window).on('load scroll', function(){
-
-        console.log($(window).scrollTop());
         if ($(document).scrollTop() > 70) {
-            console.log('yes');
             $('.nav').addClass('fixed');
         } else {
-            console.log('no');
             $('.nav').removeClass('fixed');
         }
-
     });
-
 });

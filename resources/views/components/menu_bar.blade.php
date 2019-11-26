@@ -5,6 +5,9 @@
                 <a href="/">Home</a>
             </li>
             <li>
+                <a href="/coding/about">Switch to Coding</a>
+            </li>
+            <li>
                 <a class="init-bottom">Basics</a>
                 <ul>
                     <li><a href='/basics/primitive-and-reference'>Primitive & Reference</a></li>
@@ -37,9 +40,6 @@
             </li>
             <li>
                 <a href="/about">About</a>
-            </li>
-            <li>
-                <a href="/practice/about">Switch to Coding</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>

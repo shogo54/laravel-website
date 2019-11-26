@@ -47,6 +47,7 @@ html, body {
 }
 
 main {
+    min-height: 100%;
     width: 1140px;
     background-color: white;
     padding: 20px 30px;
@@ -249,7 +250,4 @@ header.blue{
     background: #cde4ff;
     border-top: solid 5px #5989cf;
     border-bottom: solid 5px #5989cf;
-}
-.box.blue{
-
 }

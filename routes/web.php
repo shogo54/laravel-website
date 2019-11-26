@@ -11,7 +11,7 @@
 |
 */
 
-/* learn pages */
+/* learning pages */
 Route::get('/', 'HomeController@welcome');
 Route::get('/about', 'HomeController@about');
 Route::get('/contact', 'HomeController@contact');
@@ -26,5 +26,11 @@ Route::get('/data-structure/array', 'DataStructureController@aboutArray');
 Route::get('/data-structure/list', 'DataStructureController@aboutList');
 
 
-/* practice pages */
-Route::get("/practice/about", "HomeController@aboutPractice");
+/* coding pages */
+Route::get("/coding/about", "HomeController@aboutCoding");
+Route::get("/coding/basics", "HomeController@basics");
+
+Route::get("/coding/data-structure/array", "Coding\DataStructureController@codingArray");
+
+Route::get("/coding/algorithm/bfs", "Coding\AlgorithmController@codingBfs");
+Route::get("/coding/algorithm/dfs", "Coding\AlgorithmController@codingDfs");
